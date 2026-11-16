@@ -1,0 +1,6 @@
+{
+  "name": "سديد للأنظمة في القانون السعودي",
+  "description": "منصة سديد لشرح وتوضيح الأنظمة واللوائح السعودية بالعامية والأمثلة الواقعية ونماذج القضايا القضائية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+/* خط ثمانية سانس - Thmanyah Sans */
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('./fonts/thmanyahsans-Light.woff2') format('woff2'),
+       url('./fonts/thmanyahsans-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('./fonts/thmanyahsans-Regular.woff2') format('woff2'),
+       url('./fonts/thmanyahsans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('./fonts/thmanyahsans-Medium.woff2') format('woff2'),
+       url('./fonts/thmanyahsans-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('./fonts/thmanyahsans-Bold.otf') format('opentype');
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('./fonts/thmanyahsans-Black.woff2') format('woff2'),
+       url('./fonts/thmanyahsans-Black.otf') format('opentype');
+  font-weight: 800 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Thmanyah Sans', 'thmanyah sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+  font-family: 'Thmanyah Sans', 'thmanyah sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --card-bg-hover: #f1f5f9;
+  --container-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-secondary: #64748b;
+  --text-muted: #475569;
+  --border-subtle: #e2e8f0;
+  --border-hover: #cbd5e1;
+  --maroon: #6d1a24;
+  --maroon-dark: #531119;
+  --maroon-light: #892734;
+  --maroon-subtle: #faf5f6;
+  --gold: #b38719;
+  --gold-hover: #9a7313;
+  --gold-subtle: #fcf9ee;
+}
+
+html.dark {
+  --bg-color: #000000;
+  --card-bg: #1C1C1E;
+  --card-bg-hover: #2C2C2E;
+  --container-bg: #1C1C1E;
+  --tertiary-bg: #2C2C2E;
+  --text-main: #FFFFFF;
+  --text-secondary: #8E8E93;
+  --text-muted: #AEAEB2;
+  --border-subtle: #2C2C2E;
+  --border-hover: #3A3A3C;
+  --maroon: #dfb141;
+  --maroon-dark: #c59b27;
+  --maroon-light: #ecc056;
+  --maroon-subtle: #1C1C1E;
+  --gold: #dfb141;
+  --gold-hover: #ecc056;
+  --gold-subtle: #1C1C1E;
+}
+
+body {
+  font-family: 'Thmanyah Sans', 'thmanyah sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  min-height: 100vh;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::selection {
+  background-color: #6d1a24;
+  color: #ffffff;
+}
+.dark ::selection {
+  background-color: #dfb141;
+  color: #0f172a;
+}
